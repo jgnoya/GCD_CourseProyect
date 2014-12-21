@@ -15,3 +15,17 @@ The data collected for this study was:
 This data was collected for 30 volunteer people and the data was divided in two groups: Test and Training.
 To know more in detail about this study its possible to consult the URL: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 or read the txt documents contained in the zip file with the data used for this proyect: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+
+The data set obtained contains the following columns:
+* Subject_ID: Id of the subject that belogns the measurements
+* Activity: The activity that were performed when the measurement was taken: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING or LAYING
+* tBodyAcc-mean-XYZ: In this columns we store the average of the means of the Body Acceleration measurements for the subject_id when perform the Activity selected
+* tBodyAcc-std-XYZ: In this columns we store the average of the standard deviation of the Body Acceleration measurements for the subject_id when perform the Activity selected
+* tGravityAcc-mean-XYZ: In this columns we store the average of the means of the Gravity Acceleration measurements for the subject_id when perform the Activity selected
+* tGravityAcc-std-XYZ: In this columns we store the average of the standard deviation of the Gravity Acceleration measurements for the subject_id when perform the Activity selected
+* tBodyAccJerk-mean-XYZ: In this columns we store the average of the mean of Jerk singnals for Body Acceleration for the subject_id when perform the Activity selected
+* tBodyAccJerk-std-XYZ: In this columns we store the average of the standard deviation of Jerk singnals for Body Acceleration for the subject_id when perform the Activity selected
+* tBodyGyro-mean-XYZ: In this column is stored the average of the mean of the measurements of the gyroscope for each subject id and avtivity
+* tBodyGyroJerk-mean-X: Is the same as the previous column but with the Jerk signals
+* tBodyAccMag-mean-XYZ, tGravityAccMag-mean-XYZ, tBodyAccJerkMag-mean-XYZ, tBodyGyroMag-mean-XYZ, tBodyGyroJerkMag-mean-XYZ: the magnitude of these three-dimensional signals were calculated using the Euclidean norm. In this columns are strored the average mean for each measurement for each subject id and each activity
+* tBodyAccMag-std-XYZ, tGravityAccMag-std-XYZ, tBodyAccJerkMag-std-XYZ, tBodyGyroMag-std-XYZ, tBodyGyroJerkMag-std-XYZ: the magnitude of these three-dimensional signals were calculated using the Euclidean norm. In this columns are strored the average standard deviation for each measurement for each subject id and each activity
