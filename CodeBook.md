@@ -29,3 +29,7 @@ The data set obtained contains the following columns:
 * tBodyGyroJerk-mean-X: Is the same as the previous column but with the Jerk signals
 * tBodyAccMag-mean-XYZ, tGravityAccMag-mean-XYZ, tBodyAccJerkMag-mean-XYZ, tBodyGyroMag-mean-XYZ, tBodyGyroJerkMag-mean-XYZ: the magnitude of these three-dimensional signals were calculated using the Euclidean norm. In this columns are strored the average mean for each measurement for each subject id and each activity
 * tBodyAccMag-std-XYZ, tGravityAccMag-std-XYZ, tBodyAccJerkMag-std-XYZ, tBodyGyroMag-std-XYZ, tBodyGyroJerkMag-std-XYZ: the magnitude of these three-dimensional signals were calculated using the Euclidean norm. In this columns are strored the average standard deviation for each measurement for each subject id and each activity
+* Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-mean-XYZ, fBodyAccJerk-mean-XYZ, fBodyGyro-mean-XYZ, .... (Note the 'f' to indicate frequency domain signals). This type of columns show the average mean or the average standard deviation for the corresponding measurement, calculated for each subject id and avtivity.
+
+To obtain this data set we join the train and test data and take only the mean and standard deviation columns. Then we group the data by subject id and activity and calculate the average for each column grouped by subject id and activity.
+To do this we use functionality from plyr and dplyr packages to group, sumarize and arrange (order) the data.
